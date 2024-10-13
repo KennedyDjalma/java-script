@@ -300,3 +300,4 @@ alert (resultado);
 
     Objetos também poden ter metodos. Um método é uma função colocadas dentro de uma propriedade.
 
+https://www.youtube.com/watch?v=rwJ2bwsjGhQ&list=PL2Fdisxwzt_d590u3uad46W-kHA0PTjjw&index=10
