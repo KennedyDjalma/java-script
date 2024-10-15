@@ -300,4 +300,18 @@ alert (resultado);
 
     Objetos também poden ter metodos. Um método é uma função colocadas dentro de uma propriedade.
 
+    //////////////////////////////////////////////////////
+
+    função
+    onclick = disparado quando receber um click.
+    ondblclick = quando receber dois clicks.
+
+    onMouseOver = disparado quando o mouse esta sobre.
+    onMouseOut = disparado quando  o mouse é movido para fora do elemento.
+    onMouseMove = disparado quando o mouse é movido no elemento.
+    onMouseDown = disparado quando o click do botao é liberado.
+    onMouseUp = dispparado quando o click do botão é liberado.
+
+
+
 https://www.youtube.com/watch?v=rwJ2bwsjGhQ&list=PL2Fdisxwzt_d590u3uad46W-kHA0PTjjw&index=10
