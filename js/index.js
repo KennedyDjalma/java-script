@@ -441,6 +441,7 @@ var total=realParaDolar(10,5.08);
 alert(total);
 
 //////////////////////////////////////////////////////*/
+
 /*
 --------------------------- aula 9--------------------------
 OBJETOS
@@ -462,4 +463,6 @@ const carro={
 carro.buzina();
 
 */
-https://www.youtube.com/watch?v=rwJ2bwsjGhQ&list=PL2Fdisxwzt_d590u3uad46W-kHA0PTjjw&index=10
+
+
+//////////////////////////////////////////////////////
