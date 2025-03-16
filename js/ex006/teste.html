@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM </title>
+
+    <style>
+
+        body{
+            background-color: midnightblue;
+            color: white;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1> Primeiros passos com DOM </h1>
+    <p> Aqui vai o resultado </p>
+    <p> Aprendendo usar o    <strong>    DOM     </strong> em JavaScript. </p>
+    <div id="msg"> Clique em mim </div>
+
+    <script>
+        var h1 = document.getElementsByTagName ('h1')[0]
+        h1.style.backgroundColor = 'black'
+        h1.style.height = '150px'
+        h1.style.textAlign = 'center'
+
+        var p1 = document.getElementsByTagName ('p')[0]
+        p1.style.backgroundColor = 'grey'
+        p1.style.height = '150px'
+        p1.style.textAlign = 'center'
+        
+        var p1 = document.getElementsByTagName ('p')[1]
+        p1.style.backgroundColor = 'orange'
+        p1.style.height = '150px'
+        p1.style.textAlign = 'center'
+
+        var div = document.getElementById ('msg')
+        div.style.backgroundColor = 'gold'
+        div.style.height = '150px'
+        div.style.textAlign = 'center'
+
+    </script>
+    
+</body>
+</html>
