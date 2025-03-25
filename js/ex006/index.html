@@ -21,7 +21,10 @@
     <h1> Primeiros passos com DOM </h1>
     <p> Aqui vai o resultado </p>
     <p> Aprendendo usar o    <strong>    DOM     </strong> em JavaScript. </p>
+
     <div id="msg"> Clique em mim </div>
+
+    <div id="di2"> SEGUNDA DIV</div>
 
     <script>
 
@@ -34,12 +37,23 @@
         var p1=document.getElementsByTagName('p')[0]
         p1.style.color = 'orange'
 
+        var p1 = document.getElementsByTagName('p')[0]
+        document.write('Esta escrito: ' + p1.innerText)
+
+        var p2 = document.getElementsByTagName('p')[1]
+        document.write('. Esta escrito: ' + p2.innerHTML)
+
         var div=document.getElementById('msg')
         div.style.background = 'grey'
         div.innerText = 'OLÁ, MUNDO!'
         
         div.style.height = '500px'
         div.style.textAlign = 'center'
+
+        var d2 = document.querySelector('div#di2')
+        d2.style.height = '500px'
+        d2.style.background = 'green'
+        d2.style.textAlign = 'center'
 
     </script>
     
