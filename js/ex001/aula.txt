@@ -1,0 +1,5 @@
+USO DE:
+
+alert
+confirm
+prompt
