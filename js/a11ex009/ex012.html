@@ -8,21 +8,27 @@
 <body>
     <h1>Teste de Nacionalidade</h1>
 
-    <input type="text" name="nacionalidade" id="nacionalidade">
+    <input type="text" name="txtpais" id="txtpais">
 
-    <input type="button" value="Verificar" onclick="verificar()">
+    <input type="button" value="Verificar" onclick="calcular()">
 
-    <div id="res">  </div>
+    <div id="res"> </div>
 
     <script>
-        var nac = window.document.querySelector('input#nacionalidade')
-        var país = 'EUA'
-        console.log ('vivendo em ${país}')
-        if (país == Brasil) {
-            console.log ('Você é Brasileiro')
-        } else{
-            console.log ('Você é extrangeiro')
+    
+        var txtpais = document.querySelector ('input#txtpais')
+
+        function calcular() {
+            var res = document.querySelector ('div#res')
+            
+            res.innerHTML = `<p>Nascendo em ${pais} </p>`
+            if (pais == Brasil) {
+                res.innerHTML += '<p> voce é brasileiro. </p>'
+            } else {
+                res.innerHTML = '<p> extrangeiro </p>'
+            }
         }
+
     </script>
 </body>
 </html>
