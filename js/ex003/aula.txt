@@ -1,3 +1,5 @@
 AULA DE :
 
 number + prompt
+
+aula 6 tratamento de dados

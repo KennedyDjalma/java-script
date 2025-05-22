@@ -1,3 +1,14 @@
 AULA DE : 
 
 prompt 
+
+
+
+document.write(`Seu nome contém ${nome.length} letras.`)
+
+document.write : vai mostrar o nome na pagina 
+
+
+    var nome = window.prompt('Qual é o seu nome?')
+    document.write(`<h1>Seu nome contém ${nome.length} letras. </h1>`) 
+    : e dentro da crase pode-se usar as tags do html como o h1
