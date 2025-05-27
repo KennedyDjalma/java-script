@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste 2 Interaja</title>
+
+    <style>
+        div#area {
+            font: 35pt normal;
+            background: orange;
+            width: 300px;
+            height: 300px;
+            line-height: 280px;
+            text-align: center;
+            margin: auto;
+            margin-top: 20%;
+        }
+    </style>
+</head>
+<body>
+
+    <!--  ESSE CODIGO PODE SER SUBISTITUIDO PELO CODIGO ABAIXO  
+        <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">INTERAJA!</div>
+        -->
+        <div id="area">INTERAJA!</div>
+
+    <script>
+        var area = window.document.getElementById('area')
+        area.addEventListener("click", clicar)
+        area.addEventListener("mouseenter", entrar)
+        area.addEventListener("mouseout", sair)
+        
+        function clicar() {
+            area.innerHTML = 'CLICOU!'
+            area.style.background = 'yellow'
+            area.style.color = 'green'
+        }
+            
+        function entrar(){
+            area.innerHTML = 'ENTROU!'
+            area.style.background = 'blue'
+            area.style.color = 'white'
+        }
+
+        function sair() {
+            area.innerHTML = 'SAIU!'
+            area.style.background = 'green'
+            area.style.color = 'yellow'
+        }
+    </script>
+    
+</body>
+</html>
