@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste 2/ dad 11</title>
+</head>
+<body>
+
+    <h1>Sistema de multas</h1>
+    <input type="number" name="textovel" id="textovel"> km/h
+
+    <input type="button" value="Verificar"   onclick="calcular()">
+
+    <div id="resultado"></div>
+    
+
+    <script>
+        
+        function calcular() {
+            var textovel = window.document.querySelector('input#textovel')
+
+            var resultado = window.document.querySelector('div#resultado')
+
+            var vel = Number(textovel.value)
+
+            resultado.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}km/h </strong></p>`
+
+            if (vel > 60) {
+                resultado.innerHTML += `<p> <strong> ${vel}km/h MULTADO, INCOMPETENTE.</strong> </p>`
+            } else {
+                resultado.innerHTML += `<p> Velocidade permitida. PARABÉNS! </p>`
+            }
+
+            resultado.innerHTML += `<p> Dirija sempre usando o CINTO DE SEGURANÇA!  </p>`        }
+    </script>
+</body>
+</html>
