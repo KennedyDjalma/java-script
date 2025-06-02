@@ -1,6 +1,11 @@
 function carregar() {
+
     var msg = window.document.getElementById('msg')
+    
     var img = window.document.getElementById('imagem')
+
+    var footer = window.document.getElementById('footer')
+    var footerlink = window.document.getElementById('footerlink')
 
     function atualizarHorario() { //ACRESCENTADO FORA DA AULA
 
@@ -22,6 +27,8 @@ function carregar() {
             //BOA NOITE
             img.src = 'imagens/noite.png'
             document.body.style.background = 'darkblue'
+            footer.style.color = 'white'
+            footerlink.style.color = 'white'
         }
     }
 
