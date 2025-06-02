@@ -8,7 +8,7 @@ function carregar() {
         var hora = data.getHours()
         var minutos = data.getMinutes() // ACRESCENTADO FORA DA AULA
     
-        msg.innerHTML = `Agora são ${hora} horas e ${minutos} minutos.`
+        msg.innerHTML = `Agora são <strong> ${hora} </strong> horas e <strong> ${minutos} </strong> minutos.`
     
         if (hora >= 0 && hora < 12) {
             // BOM DIA
