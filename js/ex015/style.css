@@ -17,11 +17,16 @@ section{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.397);
 }
 
+p{
+    text-align: center;
+}
+
 footer{
     text-align: center;
     font-style: italic;
+    color: white;
 }
 
 footer a {
-    color: black;
+    color: white;
 }
