@@ -12,7 +12,7 @@ function contar() {
         var f = Number(fim.value)
         var p = Number(passo.value)
 
-        for (var c = i; c <= f; c += p) {
+        for (var c = i; c <= f; c += p) { // CONTADOR VAI COMEÇAR COM INICIO; ENQUANTO CONTADOR FOR MENOR OU IGUAL AO FIM; CONTADOR VAI RECEBER ELE MESMO MAIS O PASSO.
             res.innerHTML += `${c} \u{1F449}`
         }
         res.innerHTML += `\u{1F3C1}`
