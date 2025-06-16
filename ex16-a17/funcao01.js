@@ -1,11 +1,10 @@
-function parimpar (n) {
-    if (n % 2 == 0){
+function parimpar(n) {
+    if (n % 2 == 0) {
         return 'PAR!'
-    }
-    else {
-        return ' IMPAR!'
+    } else {
+        return ' ÍMPAR!'
     }
 }
 
-let res = parimpar (0)
-console.log(res)
+let res = parimpar(11)
+console.log(res) // OU console.log(parimpar(11))
