@@ -37,6 +37,7 @@ const Kennedy = {
 console.log(Kennedy.showMessage())
 */
 
+/*
 const Kennedy = {
 
     completeName: 'Kennedy Djalma de Santana.',
@@ -47,3 +48,39 @@ const Kennedy = {
     estado: 'Pernambuco'
 }
 console.log(Kennedy.showMessage())
+
+*/
+/*
+const Kennedy = {
+    completName: 'Kennedy Djalma',
+    idade: 29,
+    showMessage: function(){
+        alert('MENSAGEM DE ALERTA')
+    }
+}
+console.log(Kennedy.showMessage())
+*/
+
+/*
+const Kennedy = {
+    nomeCompleto: 'Kennedy Djalma de Santana',
+    idade: 29,
+    cidade: 'Lagoa do Itaenga',
+    showMessage: function(){
+        alert ('MENSAGEM DE ALERTA :) ')
+    },
+    estado: 'Pernambuco'
+}
+
+console.log(Kennedy.showMessage())
+*/
+
+const Kennedy = {
+    nomeCompleto: 'Kennedy Djalma de Santana',
+    idade: 29,
+    cidade: 'Lagoa do Itaenga',
+    ShowMessage: function(){
+        alert('MENSAGEM OFICIAL DE ALERTA.')
+    }
+}
+console.log(Kennedy.ShowMessage())
