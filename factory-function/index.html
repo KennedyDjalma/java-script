@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Factory Function</title>
     <style>
-        h1, p {
-    text-align: center;
-}
+        h1,
+        p {
+            text-align: center;
+        }
     </style>
 </head>
+
 <body>
 
     <h1>Factory Function</h1>
@@ -18,7 +21,17 @@
         Uma <strong>Factory Function</strong> ela vai retornar um objeto quando essa função for execultada.
     </p>
 
+    <p>const factoryFunction = (name) => {</p>
+        <p>return {</p>
+            <p>logou: () => alert(`O usuário ${name} logou`),</p>
+            <p>deslogou: () => alert(`O usuário ${name} deslogou`),</p>
+        <p>}</p>
+    <p>}</p>
+
+    <p>factoryFunction('Kennedy').logou();</p>
+
     <script src="script.js"></script>
-    
+
 </body>
+
 </html>
