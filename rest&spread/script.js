@@ -13,7 +13,9 @@ const motosAltas = ['Bros', 'Crosser', 'Xre', 'Lander']
 const motosBaixas = ['Fan', 'Factor', 'Bis', 'Neo']
 
 const motos = [...motosAltas, ...motosBaixas]
+console.log(motos)
 */
+
 
 const pessoa = {
     nome: ' Kennedy',
@@ -29,3 +31,4 @@ const endereco = {
 const dados = {
     ...pessoa, ...endereco
 }
+console.log(dados)
