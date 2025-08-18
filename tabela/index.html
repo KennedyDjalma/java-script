@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>App de Tabela Editável</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Minha Tabela Editável</h1>
+  <table id="editableTable">
+    <thead>
+      <tr>
+        <th>Coluna A</th>
+        <th>Coluna B</th>
+        <th>Coluna C</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- 5 linhas como exemplo -->
+      <tr>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+      </tr>
+      <tr>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+      </tr>
+      <!-- Adicione mais linhas conforme necessário -->
+    </tbody>
+
+    <label for="tituloTabela">Título da Tabela:</label>
+<input type="text" id="tituloTabela" placeholder="Ex: Estoque Agosto">
+
+  </table>
+
+  <button onclick="salvarTabela()">💾 Salvar</button>
+  <button onclick="carregarTabela()">📂 Carregar</button>
+  <button onclick="adicionarLinha()">➕ Adicionar Linha</button>
+  <button onclick="excluirTabela()">🗑️ Excluir Selecionada</button>
+
+  <select id="listaTabelas">
+  <option value="">Selecione uma tabela</option>
+</select>
+<button onclick="carregarTabelaSelecionada()">📂 Carregar Selecionada</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

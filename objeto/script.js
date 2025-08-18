@@ -75,6 +75,7 @@ const Kennedy = {
 console.log(Kennedy.showMessage())
 */
 
+/*
 const Kennedy = {
     nomeCompleto: 'Kennedy Djalma de Santana',
     idade: 29,
@@ -84,3 +85,47 @@ const Kennedy = {
     }
 }
 console.log(Kennedy.ShowMessage())
+*/
+
+/*
+const dados = {
+    nome : 'Kennedy',
+    idade : 29
+}
+
+const endereco = {
+    cidade : 'Lagoa' , 
+    estado : 'PE',
+}
+
+Object.assign (dados,endereco)
+console.log (dados) // serve para colocar as propriedades de um objeto para outro objeto
+*/
+
+/*
+const dados = {
+    nome : 'Kennedy',
+    idade : 29
+}
+
+const endereco = {
+    cidade : 'Lagoa' , 
+    estado : 'PE',
+}
+
+console.log(Object.keys(dados, endereco))//object.keys() //keys é a chave ou nome que esta definindo o metodo.
+*/
+
+
+// object.values()
+const dados = {
+    nome : 'Kennedy',
+    idade : 29
+}
+
+const endereco = {
+    cidade : 'Lagoa' , 
+    estado : 'PE',
+}
+
+console.log(Object.values(endereco))

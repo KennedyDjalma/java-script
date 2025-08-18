@@ -1,0 +1,28 @@
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+td[contenteditable="true"] {
+  background-color: #fffbe6;
+}
+
+button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
