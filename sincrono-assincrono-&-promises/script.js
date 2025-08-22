@@ -24,3 +24,22 @@ minhaPromise.then((resultado) => {
 }).catch((error) => {
     console.log(error)
 })
+
+//      EX 02
+
+const novaPromise = new Promise((resolveu, rejeitado) =>{
+    let condicional = true;
+
+    if(condicional){
+        resolveu('AGORA RESOLVEU')
+    }
+    else{
+        rejeitado('AGORA FOI REJEITADO')
+    }
+})
+
+novaPromise.then((resultado2) =>{
+    console.log(resultado2)
+}).catch((rejeitado) => {
+    console.log(rejeitado)
+})
