@@ -5,26 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos de mouse</title>
 
+    <style>
+        body {
+            height: 100vh;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        p#texto {
+            width: 80%;
+            margin: auto auto;
+        }
+
+        div.botao {
+            display: flex;    
+            justify-content: center;
+            align-items: center;
+            
+            margin: 65px 0px 20px 0px;       
+        }
+        div#teste {
+            width: 80%;
+            height: 200px;
+            background-color: green;
+            margin: auto auto;
+        }
+
+        input {
+            display: block;
+            margin: 0 auto;
+            width: 60%;
+
+            padding: 80px;
+            font-size: 40px;
+            margin-top: 200px;
+        }
+    </style>
 </head>
-<body>
+
+<body
+/*onmouseup="alert('Clicou e soltou na tela')"*/
+ >
+    
 
     <h1>Eventos de mouse</h1>
+    <h2>Eventos JS</h2>
 
-    <button onclick="eventoClick()">onclick</button>
+    <p id="texto"> </p>
 
-    <button ondblclick="eventoDblClick()">ondblclick</button>
-
+    <div class="botao">
+            <button onclick="eventoClick()">onclick</button>
+            <button ondblclick="eventoDblClick()">ondblclick</button>
+    </div>
 
     <div id="teste"
-         onmouseover="viraVermelho()"
+         onmouseover="viraAzul()" 
          onmouseout="viraVerde()"
          onmousemove="adicionaTexto()"
-         
-         style="width: 80%;
-         height: 200px;
-         background-color: green;
-         margin: auto auto;"> 
+        /*onmousedown="alert('Clicou no quadrado')" */
     </div>
+    <br>
+
+     <input id="campoTexto" onfocus="limpaTexto()" type="text" placeholder="Digite aqui...">
+
+   
 
     <script src="script.js"></script>
 </body>
