@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            text-align: center;
+        }
+        button{
+            width: 250px;
+            height: 200px;
+        }
+        .start{
+            background: blue;
+        }
+        .stop{
+            background: orangered;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Controle de tempo</h1>
+    <h2 id="tempo">0</h2>
+
+    <button onclick="ativarContagem()" class="start">Ativar Contagem</button>
+    <button onclick="pararContagem()" class="stop">Parar Contagem</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
