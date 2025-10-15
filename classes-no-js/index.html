@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+</head>
+
+<body>
+    <h1>Classes no JavaScript</h1>
+
+    <p>
+        class Motos { <br>
+        constructor(valor1, valor2, valor3) { <br>
+        this.marca = valor1; <br>
+        this.modelo = valor2; <br>
+        this.ano = valor3; <br>
+        } <br>
+        buzina() { <br>
+        return this.modelo + " buzinou: Bii Bii"; <br>
+        } <br>
+        } <br>
+ <br>
+        const cg = new Motos("Honda", "Cg", 2019); <br>
+        const fazer = new Motos("Yamaha", "Factor", <br> 2010); <br>
+        console.log(cg); <br>
+        console.log(fazer.buzina()); <br>
+        cg.ano = 2010; <br>
+        console.log(cg); <br>
+    </p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
