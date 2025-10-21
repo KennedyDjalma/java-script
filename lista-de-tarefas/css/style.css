@@ -10,19 +10,19 @@ body {
 }
 
 h1 {
-    text-align: center;
+    text-align: center; /* ALINHAMENTO AO CENTRO */
     font-size: 3rem;
 }
 
 header {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row wrap; /* é uma forma abreviada de definir duas propriedades ao mesmo tempo em um container flexível */
     align-items: center;
     width: 90%;
     margin: auto auto;
     /* border: 1px solid orangered; */
 }
-
+/*  */
 input {
     height: 120px;
     font-size: 2rem;
@@ -35,18 +35,18 @@ button.add {
     cursor: pointer;
     background: green;
     color: white;
-    font-weight: bold;
-    border: none;
+    font-weight: bold; /* NEGRITO */
+    border: none; /* SEM EFEITO NO BOTAO */
     height: 120px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px; /* ARREDONDAMENTO DA BORDA DO BOTÃO */
+    border-bottom-right-radius: 10px; /* ARREDONDAMENTO DA BORDA DO BOTÃO */
 }
-
+/*  */
 main {
     display: flex;
     flex-flow: row wrap;
     width: 90%;
-    margin: auto auto;
+    margin: auto auto; /* CENRTRALIZAR NO MEIO */
     padding-top: 40px;
     /* border: 1px solid goldenrod; */
 }
@@ -59,12 +59,12 @@ main {
     background: white;
     height: 80px;
     width: 100%;
-    box-shadow: 0 0 20px #ccc;
-    margin-bottom: 1%;
+    box-shadow: 0 0 20px #ccc; /* SOMBREAMENTO */
+    margin-bottom: 1%;  /* ESPAÇAMENTO ENTRE AS TAREFAS ADICIONADAS */
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-
+/*  */
 .item-icone {
     flex: 20%;
     text-align: center;
@@ -87,7 +87,7 @@ main {
     height: 80px; */
 }
 
-.delete {
+button.delete {
     background: red;
     color: white;
     border: none;
@@ -97,7 +97,6 @@ main {
     cursor: pointer;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-
 }
 
 .item-clicado {
@@ -105,15 +104,20 @@ main {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    background: #b4d4b4;
+    background: #D4F6D9;
     height: 80px;
     width: 100%;
     box-shadow: 0 0 20px #ccc;
     margin-bottom: 1%;
 }
+/*  */
 .item-clicado .item-nome {
-    text-decoration: line-through;
+    text-decoration: line-through; /* RISCAR A TAREFA */
     color: grey;
 }
 
-/* 23:12 */
+#icone-marcado{
+    color: green;
+}
+
+/* 40:00 */
