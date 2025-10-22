@@ -13,12 +13,12 @@ function addTarefa() {
 
         let novoItem =
             `<div id="${contador}" class="item">
-            <div class="item-icone">
-                <i class="mdi mdi-radiobox-blank"></i>
+            <div onclick="marcarTarefa(${contador})" class="item-icone">
+                <i id="icone_${contador}" class="mdi mdi-radiobox-blank"></i>
             </div> <!--.item-icone -->
 
-            <div class="item-nome">
-                ${valorInput}
+            <div onclick="marcarTarefa(${contador})" class="item-nome">
+                ${valorInput} 
             </div> <!--.item-nome -->
 
             <div class="item-botao">
@@ -27,23 +27,40 @@ function addTarefa() {
                 </button>
             </div> <!--.item-botao -->
         </div> <!-- item -->`;
-        // ADICIONAR NOVO ITEM NO MAIN
-        main.innerHTML += novoItem;
-        // ZERAR OS CAMPINHOS
-        input.value = "";
-        input.focus();
+
+
+        
+        main.innerHTML += novoItem; // ADICIONAR NOVO ITEM NO MAIN
+
+        input.value = ""; // ZERAR OS CAMPINHOS
+        input.focus(); // VAI MANTER O PLACEHOLDER
     }
 }
 
-function deletar(id) {
-    var tarefa = document.getElementById(id);
+function deletar(id) { //VAI DELETAR NO CONSOLE 
+    var tarefa = window.document.getElementById(id);
     tarefa.remove();
-} 
+}
 
-input.addEventListener("keyup", function (event) {
+input.addEventListener("keyup", function (event) {  // ADICIONAR TAREFAS COM O CLIQUE DO ENTER.
     // SE A TECLAR ENTER (13)
     if (event.keyCode === 13) {
         event.preventDefault(); //serve para evitar qualquer problema que a tecla 13 possa trazer
         btnAdd.click();
     }
 })
+
+function marcarTarefa(id) {
+    var item = window.document.getElementById(id);
+    var classe = item.getAttribute('class');
+    console.log(classe)
+
+    if (classe == "item") {
+        item.classList.add('clicado');
+
+        window.document.getElementById('icone_' + id)
+        isSecureContext.classList.remove('mdi-radiobox-blank');
+        isSecureContext.classList.add('mdi-radiobox-marked');
+        
+    }
+}
