@@ -10,7 +10,7 @@ body {
 }
 
 h1 {
-    text-align: center; /* ALINHAMENTO AO CENTRO */
+    text-align: center;    /* ALINHAMENTO AO CENTRO */
     font-size: 3rem;
 }
 
@@ -22,6 +22,7 @@ header {
     margin: auto auto;
     /* border: 1px solid orangered; */
 }
+
 /*  */
 input {
     height: 120px;
@@ -35,18 +36,20 @@ button.add {
     cursor: pointer;
     background: green;
     color: white;
-    font-weight: bold; /* NEGRITO */
-    border: none; /* SEM EFEITO NO BOTAO */
+    font-weight: bold;    /* NEGRITO */
+    border: none;    /* SEM EFEITO NO BOTAO */
     height: 120px;
-    border-top-right-radius: 10px; /* ARREDONDAMENTO DA BORDA DO BOTÃO */
-    border-bottom-right-radius: 10px; /* ARREDONDAMENTO DA BORDA DO BOTÃO */
+    border-top-right-radius: 10px;    /* ARREDONDAMENTO DA BORDA DO BOTÃO */
+    border-bottom-right-radius: 10px;
 }
+
 /*  */
 main {
     display: flex;
     flex-flow: row wrap;
     width: 90%;
-    margin: auto auto; /* CENRTRALIZAR NO MEIO */
+    margin: auto auto;
+    /* CENRTRALIZAR NO MEIO */
     padding-top: 40px;
     /* border: 1px solid goldenrod; */
 }
@@ -59,12 +62,13 @@ main {
     background: white;
     height: 80px;
     width: 100%;
-    box-shadow: 0 0 20px #ccc; /* SOMBREAMENTO */
-    margin-bottom: 1%;  /* ESPAÇAMENTO ENTRE AS TAREFAS ADICIONADAS */
+    box-shadow: 0 0 20px #ccc;    /* SOMBREAMENTO */
+    margin-bottom: 1%;    /* ESPAÇAMENTO ENTRE AS TAREFAS ADICIONADAS */
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     cursor: pointer;
 }
+
 /*  */
 .item-icone {
     flex: 20%;
@@ -110,14 +114,11 @@ button.delete {
     width: 100%;
     box-shadow: 0 0 20px #ccc;
     margin-bottom: 1%;
-}
-/*  */
-.item-clicado .item-nome {
-    text-decoration: line-through; /* RISCAR A TAREFA */
+    text-decoration: line-through;/* RISCAR A TAREFA */
     color: grey;
 }
 
-#icone-marcado{
+#icone-marcado {
     color: green;
 }
 

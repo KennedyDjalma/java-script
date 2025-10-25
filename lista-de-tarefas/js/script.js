@@ -28,8 +28,6 @@ function addTarefa() {
             </div> <!--.item-botao -->
         </div> <!-- item -->`;
 
-
-        
         main.innerHTML += novoItem; // ADICIONAR NOVO ITEM NO MAIN
 
         input.value = ""; // ZERAR OS CAMPINHOS
@@ -45,7 +43,7 @@ function deletar(id) { //VAI DELETAR NO CONSOLE
 input.addEventListener("keyup", function (event) {  // ADICIONAR TAREFAS COM O CLIQUE DO ENTER.
     // SE A TECLAR ENTER (13)
     if (event.keyCode === 13) {
-        event.preventDefault(); //serve para evitar qualquer problema que a tecla 13 possa trazer
+        event.preventDefault(); //serve para evitar qualquer problema que a tecla 13 possa trazer de errado
         btnAdd.click();
     }
 })
@@ -53,14 +51,23 @@ input.addEventListener("keyup", function (event) {  // ADICIONAR TAREFAS COM O C
 function marcarTarefa(id) {
     var item = window.document.getElementById(id);
     var classe = item.getAttribute('class');
-    console.log(classe)
+    console.log(classe);
 
-    if (classe == "item") {
-        item.classList.add('clicado');
+    if (classe == "item") { // MARCAR O ICONE CLICANDO
+        item.classList.add('item-clicado');
 
-        window.document.getElementById('icone_' + id)
-        isSecureContext.classList.remove('mdi-radiobox-blank');
-        isSecureContext.classList.add('mdi-radiobox-marked');
-        
+        var icone = window.document.getElementById('icone_' + id)
+        icone.classList.remove('mdi-trash-can-outline');
+        icone.classList.add('mdi-radiobox-marked');
+
+        item.parentNode.appendChild(item); // COLOCAR O ITEM MARCADO NO FINAL.
+
+    } else { // DESMARCAR O ICONE CLICANDO
+        item.classList.remove('item-clicado');
+
+        var icone = window.document.getElementById('icone_' + id)
+        icone.classList.add('mdi-radiobox-blank');
+        icone.classList.remove('mdi-radiobox-marked');
+
     }
 }
