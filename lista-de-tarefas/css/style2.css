@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family:"Cinzel", serif;
+    background: rgba(128, 128, 128, 0.482);
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    align-items: center;
+    margin: auto auto;
+    /* border: 1px solid bisque; */
+}
+
+input {
+    height: 120px;
+    font-size: 2rem;
+    width: 80%;
+    padding-left: 10%; /* espaçamento do placeholder */
+}
+
+button.add {
+    width: 20%;
+    height: 120px;
+    cursor: pointer;
+    background: rgb(138, 221, 138);
+    font-weight: bold;
+    /* border: none; */
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: auto auto;
+    padding-top: 40px;
+    /* border: 1px solid gold; */
+}
+/*  */
+.item{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 0 20px #856666;
+    margin-bottom: 1.5%;
+}
+
+.item-icone {
+    flex: 20%;
+    text-align: center;
+    font-size: 2rem;
+    /* border: 1px solid black; */
+    /* padding: 5%; */
+}
+
+.item-nome {
+    flex: 55%;
+    font-size: 1.5rem;
+    /* text-align: center; */
+    /* border: 1px solid rgb(8, 237, 42); */
+    /* padding: 5%; */
+}
+.item-botao {
+    flex: 25%;
+    /* border: 1px solid rgb(223, 15, 234); */
+    /* padding: 5%; */
+}
+
+.delete {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    height: 80px;
+    width: 100%;
+    cursor: pointer;
+}
+
+#iClicado{
+    color: rgb(138, 221, 138) ;
+}
+
+.item.clicado {
+    background-color: rgb(164, 170, 164) ;
+}
+.item.clicado .item-nome {
+    text-decoration: line-through;
+    color: rgb(200, 206, 200) ;
+}
