@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Raio X</title>
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* ====================== */
+        /* CSS INTERNO */
+        /* ====================== */
+    </style>
+
+</head>
+
+<body>
+    <h1>Projeto Raio X</h1>
+    
+    <div class="meioDaPagina">
+
+
+        <div> <!--Digite a CA -->
+            Digite CA: <input type="number" id="inputCA" placeholder="Constante do Aparelho">
+        </div> <!--Digite a CA -->
+
+        <div> <!--Espessura do corpo: -->
+            Espessura do corpo: <input type="number" id="inputNumber" placeholder="Espessura em cm">
+            <button id="calculateButton">Calcular</button>
+        </div> <!--Espessura do corpo: -->
+
+        <div> <!--Resultado do Kv:-->
+            Resultado do Kv: <input type="number" id="inputKv" placeholder="Resultado do Kv" readonly>
+        </div> <!--Resultado do Kv:-->
+
+        <div> <!-- Divisão de Informações -->
+            <p>
+                Quilovolts (kV): É representado pelo símbolo kV e determina a energia (Qualidade, força, poder de
+                penetração)
+                do feixe de radiação.
+            </p>
+
+            <p>
+                A fórmula do kv é: <strong> Kv = 2e + CA </strong>
+            </p>
+
+            <p>
+                Onde: <br>
+                e = Espessura da parte a ser radiografada. <br>
+                CA = Constante do Aparelho.
+            </p>
+        </div> <!-- Divisão de Informações -->
+
+    </div> <!-- fim da div meioDaPagina -->
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

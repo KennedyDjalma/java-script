@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Raio X</title>
+</head>
+<body>
+
+    <h1>Projeto Raio X</h1>
+
+    <div> 
+        Digite CA: <input type="number" id="inputCA" placeholder="Constante do Aparelho">
+    </div>
+
+    <div>
+        Espessura do corpo: <input type="number" id="inputNumber" placeholder="Espessura em cm">
+        <button id="calculateButton">Calcular</button>
+    </div>
+
+    <div>   
+        Resultado do Kv: <input type="number" id="inputKv" placeholder="Resultado do Kv" readonly>
+    </div>
+
+    <script>
+        // Captura o botão
+        const button = document.getElementById("calculateButton");
+
+        // Adiciona evento de clique
+        button.addEventListener("click", function() {
+            // Pega os valores dos inputs
+            const ca = parseFloat(document.getElementById("inputCA").value);
+            const e = parseFloat(document.getElementById("inputNumber").value);
+
+            // Verifica se os valores são válidos
+            if (isNaN(ca) || isNaN(e)) {
+                alert("Por favor, preencha todos os campos corretamente!");
+                return;
+            }
+
+            // Fórmula: Kv = 2e + CA
+            const kv = (2 * e) + ca;
+
+            // Mostra o resultado no input readonly
+            document.getElementById("inputKv").value = kv;
+        });
+    </script>
+
+</body>
+</html>
