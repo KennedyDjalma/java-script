@@ -58,3 +58,18 @@ button:hover {
 .informacao {
     margin-top: 7rem;
 }
+
+footer div p {
+    background-color: #0a0000;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 2px;
+}
+
+a {
+    background-color: inherit;
+    color: white;
+    text-decoration: none;
+    font:inherit;
+}
