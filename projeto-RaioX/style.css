@@ -1,14 +1,22 @@
-
 * {
     background-color: #ebe4e4;
 }
 
 h1 {
     text-align: center;
-
 }
 
-.meioDaPagina {
+h2 {
+    text-align: center;
+    background-color: #fff;
+}
+
+h3 {
+    text-align: center;
+    background-color: #fff;
+}
+
+.folhaDaPagina {
     background-color: #fff;
     margin: 20px auto;
     padding: 20px;
@@ -31,7 +39,7 @@ input {
     border: 1px solid #ccc;
     padding: 10px;
     margin: 5px 0;
-    margin-left: 40px;
+    /* margin-left: 6px; */
 }
 
 button {
@@ -39,10 +47,14 @@ button {
     color: white;
     border: none;
     padding: 10px 20px;
-    margin-left: 10px;
+    /* margin-left: 6px; */
     cursor: pointer;
 }
 
 button:hover {
     background-color: #45a049;
+}
+
+.informacao {
+    margin-top: 7rem;
 }

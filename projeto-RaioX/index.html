@@ -17,24 +17,28 @@
 
 <body>
     <h1>Projeto Raio X</h1>
-    
-    <div class="meioDaPagina">
 
+    <div class="folhaDaPagina">
+
+        <h2>Calculadora de Quilovolts (kV)</h2>
 
         <div> <!--Digite a CA -->
-            Digite CA: <input type="number" id="inputCA" placeholder="Constante do Aparelho">
+            <input type="number" id="inputCA" placeholder="Constante do Aparelho"> Digite CA. 
         </div> <!--Digite a CA -->
 
         <div> <!--Espessura do corpo: -->
-            Espessura do corpo: <input type="number" id="inputNumber" placeholder="Espessura em cm">
-            <button id="calculateButton">Calcular</button>
+            <input type="number" id="inputNumber" placeholder="Espessura em cm"> Espessura do corpo. 
         </div> <!--Espessura do corpo: -->
 
+        <button id="calculateButton">Calcular</button>
+
         <div> <!--Resultado do Kv:-->
-            Resultado do Kv: <input type="number" id="inputKv" placeholder="Resultado do Kv" readonly>
+            <input type="number" id="inputKv" placeholder="Resultado do Kv" readonly> Resultado do Kv. 
         </div> <!--Resultado do Kv:-->
 
-        <div> <!-- Divisão de Informações -->
+        <div class="informacao"> <!-- Divisão de Informações -->
+            
+            <h3>Informações:</h3>
             <p>
                 Quilovolts (kV): É representado pelo símbolo kV e determina a energia (Qualidade, força, poder de
                 penetração)
