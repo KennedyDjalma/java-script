@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Raio X</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="calcMas.css">
 </head>
 
 <body>
@@ -16,13 +16,13 @@
         <nav>
             <a href="index.html">(kV)</a> - 
             <a href="calcMas.html">(mAs)</a> - 
-            <a href="calcmA.html">(s)</a> - 
+            <!-- <a href="calcmA.html">(s)</a> -  -->
         </nav>
     </header>
 
     <div class="folhaDaPagina">
 
-        <h2>Calculadora de Quilovolts (kV)</h2>
+        <h2>Calculadora de Miliampère-segundo (mAs)</h2>
 
         <div> <!--Digite a CA -->
             <input type="number" id="inputCA" placeholder="Constante do Aparelho"> Digite CA.
@@ -40,6 +40,54 @@
 
         <div class="informacao"> <!-- Divisão de Informações -->
 
+            <h3>Constantes Miliamperimétrica de Maron (C.M.M)</h3> 
+            <table>
+                <tr>
+
+                    <td>Estrutura ou região radiografada</td>
+                    <td>Unidade de medida da absorção</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Corpo Ósseo</td>
+                    <td>Cintura escapular = 0,5</td>
+                </tr>
+                <tr>
+                    <td>Cintura pélvica = 0,5</td>
+                </tr>
+                <tr>
+                    <td>Crânio e coluna vertebral = 0,5</td>
+                </tr>
+                <tr>
+                    <td rowspan="4">Extremidades</td>
+                </tr>
+                <tr>
+                    <td>Quirodáctilos e pododáctilos = 0,1</td>
+                </tr>
+                <tr>
+                    <td>Mão, pé, perma e antebraço = 0,1</td>
+                </tr>
+                <tr>
+                    <td>Úmero, joelho, cotovelo, etc. = 0,1</td>
+                </tr>
+                <tr>
+                    <td>Aparelho respiratório</td>
+                    <td> Tórax = 0,1</td>
+                </tr>
+                <tr>
+                    <td>Aparelho digestivo</td>
+                    <td> Estomago, intestino e etc. = 0,3</td>
+                </tr>
+                <tr>
+                    <td>Aparelho urinário</td>
+                    <td> Abdome e rins = 0,3</td>
+                </tr>
+                <tr>
+                    <td>Partes moles</td>
+                    <td> Região muscular e cartilagem = 0,01</td>
+                </tr>
+
+            </table>
+
             <h3>Informações:</h3>
             <p>
                 Corpo ósseo = Com Bucky. <br>
@@ -56,7 +104,7 @@
 
     </div> <!-- fim da div meioDaPagina -->
 
-
+<!-- 
     <footer>
         <div class="div1footer">
             <p>Desenvolvido por: <a href="https://www.linkedin.com/in/kennedy-djalma-492400283/" target="_blank">Kennedy
@@ -65,8 +113,16 @@
             <p>Baseado no livro: "Técnicas Básicas de Bolso" de Leal.R | Ramos, E.S. | Chernicharo, J.</p>
         </div> <!-- fim da div1footer -->
 
-    </footer>
+    </footer> -->
     <script src="script.js"></script>
 </body>
 
 </html>
+
+
+
+
+<!--
+Basicamente, para criar uma tabela em HTML, você vai usar a tag `<table>` para definir a tabela em si. Dentro dela, cada linha é criada com a tag `<tr>` e as colunas são definidas com a tag `<td>`. Por exemplo, você pode fazer algo assim: abrir a tag `<table>`, depois `<tr>` para uma nova linha, e dentro dessa linha, colocar `<td>` para cada célula. E assim você monta sua tabela.
+
+Você pode fazer isso usando a propriedade `rowspan` no HTML. Basicamente, você vai criar uma linha com duas células. Na célula da esquerda, que vai servir como título (por exemplo, "Corpo Ósseo"), você deixa essa célula com `rowspan="3"`. Isso vai fazer com que ela ocupe o espaço de três linhas. Nas três linhas ao lado (na segunda coluna), você coloca "Cintura Escapular", "Cintura Pélvica" e "Crânio", cada um em uma linha separada. -->
