@@ -12,11 +12,10 @@
 <body>
     <h1>Projeto Raio X</h1>
 
-    <header> 
+    <header>
         <nav>
-            <a href="index.html">(kV)</a> - 
-            <a href="calcMas.html">(mAs)</a> - 
-            <!-- <a href="calcmA.html">(s)</a> -  -->
+            <a href="index.html"><strong>kV</strong></a> |
+            <a href="calcMas.html"><strong>mAs</strong></a>
         </nav>
     </header>
 
@@ -24,23 +23,28 @@
 
         <h2>Calculadora de Miliampère-segundo (mAs)</h2>
 
-        <div> <!--Digite a CA -->
-            <input type="number" id="inputCA" placeholder="Constante do Aparelho"> Digite CA.
-        </div> <!--Digite a CA -->
+        <div><!--CAMPOS DE INPUT-->
+            Digite CA ou CF.
+            <input type="number" id="inputCA" placeholder="Constante Aparelho/filme"> <br>
 
-        <div> <!--Espessura do corpo: -->
-            <input type="number" id="inputNumber" placeholder="Espessura em cm"> Espessura do corpo.
-        </div> <!--Espessura do corpo: -->
+            Espessura do corpo.
+            <input type="number" id="inputCm" placeholder="Espessura em cm"> <br>
 
-        <button id="calculateButton">Calcular</button>
+            C.M.M.
+            <input type="number" id="inputCMM" placeholder="C.M.M."> <br>
 
-        <div> <!--Resultado do Kv:-->
-            <input type="number" id="inputKv" placeholder="Resultado do Kv" readonly> Resultado do Kv.
-        </div> <!--Resultado do Kv:-->
+
+            <button id="calculateButton" onclick="calcularmAs()">Calcular</button>
+            <br>
+
+            Resultado do mAs.
+            <input type="number" id="inputmAs" placeholder="Resultado do mAs" readonly>
+        </div><!--CAMPOS DE INPUT-->
+
 
         <div class="informacao"> <!-- Divisão de Informações -->
 
-            <h3>Constantes Miliamperimétrica de Maron (C.M.M)</h3> 
+            <h3>Constantes Miliamperimétrica de Maron (C.M.M)</h3>
             <table>
                 <tr>
 
@@ -97,32 +101,23 @@
                 <strong>mAs = (2 x E + CA) x C.M.M</strong>.
                 Estruturas inferiores a 10cm usa-se:
                 <strong>mAs = (2 x E + CF) x C.M.M</strong>. <br>
-                Onde: <strong>CA</strong> = constante do aparelho. (Para descobrir a constante do aparelho basta diminuir todo o <strong>KV</strong> na mesa de comando. O <strong>KV</strong> mínimo é a constante do aparelho.) <strong>CF</strong> = constante do filme. (Para filmes de base verde a constante é 20 e para base azul a constante é 30.) <br>
+                Onde: <strong>CA</strong> = constante do aparelho. (Para descobrir a constante do aparelho basta
+                diminuir todo o <strong>KV</strong> na mesa de comando. O <strong>KV</strong> mínimo é a constante do
+                aparelho.) <strong>CF</strong> = constante do filme. (Para filmes de base verde a constante é 20 e para
+                base azul a constante é 30.) <br>
             </p>
 
         </div> <!-- Divisão de Informações -->
 
     </div> <!-- fim da div meioDaPagina -->
 
-<!-- 
     <footer>
-        <div class="div1footer">
             <p>Desenvolvido por: <a href="https://www.linkedin.com/in/kennedy-djalma-492400283/" target="_blank">Kennedy
                     Djalma.</a></p>
 
             <p>Baseado no livro: "Técnicas Básicas de Bolso" de Leal.R | Ramos, E.S. | Chernicharo, J.</p>
-        </div> <!-- fim da div1footer -->
-
-    </footer> -->
-    <script src="script.js"></script>
+    </footer>
+    <script src="calcMas.js"></script>
 </body>
 
 </html>
-
-
-
-
-<!--
-Basicamente, para criar uma tabela em HTML, você vai usar a tag `<table>` para definir a tabela em si. Dentro dela, cada linha é criada com a tag `<tr>` e as colunas são definidas com a tag `<td>`. Por exemplo, você pode fazer algo assim: abrir a tag `<table>`, depois `<tr>` para uma nova linha, e dentro dessa linha, colocar `<td>` para cada célula. E assim você monta sua tabela.
-
-Você pode fazer isso usando a propriedade `rowspan` no HTML. Basicamente, você vai criar uma linha com duas células. Na célula da esquerda, que vai servir como título (por exemplo, "Corpo Ósseo"), você deixa essa célula com `rowspan="3"`. Isso vai fazer com que ela ocupe o espaço de três linhas. Nas três linhas ao lado (na segunda coluna), você coloca "Cintura Escapular", "Cintura Pélvica" e "Crânio", cada um em uma linha separada. -->

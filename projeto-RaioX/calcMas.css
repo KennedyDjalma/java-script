@@ -11,20 +11,18 @@ header {
     border-radius: 5px;
 }
 
-header input {
-    background-color: #c6c5c5;
-    margin: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+nav a {
+    color:#004d61;
+    text-decoration: underline;
 }
 
-header input:hover {
-    background-color: #004d61;
-    transition: 0.3s ease-in-out;
-    color: white;
+nav a strong {
+    background-color: #ebe4e4;
+    text-decoration: none;
+}
+
+a {
+    margin: 5%;
 }
 
 h2 {
@@ -52,6 +50,7 @@ td {
     border: 1px solid #000000;
     text-align: center;
     background-color: #fff;
+    padding: 5px;
 }
 
 div,
@@ -70,6 +69,7 @@ input {
     border-radius: 4px;
     padding: 10px;
     margin: 5px 0;
+    
 }
 
 button {
@@ -87,10 +87,6 @@ button:hover {
     transition: 0.3s ease-in-out;
 }
 
-.informacao {
-    margin-top: 7rem;
-}
-
 footer p {
     background-color: #0a0000;
     color: #fff;
@@ -100,11 +96,8 @@ footer p {
 }
 
 footer {
-    position: absolute;
     bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #030000;
+    margin-bottom: 0;
 }
 
 a {
