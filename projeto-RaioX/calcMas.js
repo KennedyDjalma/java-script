@@ -17,5 +17,5 @@ button.addEventListener("click", function () {
     const mAs = (2 * e + ca) * cmm;
 
     // Mostra o resultado no input readonly
-    document.getElementById("inputMas").value = mAs;
+    document.getElementById("inputmAs").value = mAs;
 });
