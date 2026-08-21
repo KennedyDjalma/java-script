@@ -12,10 +12,10 @@
 <body>
     <h1>Projeto Raio X</h1>
 
-    <header> 
+    <header>
         <nav>
             <a href="index.html"><strong>kV</strong></a> |
-            <a href="calcMas.html"><strong>mAs</strong></a> 
+            <a href="calcMas.html"><strong>mAs</strong></a>
         </nav>
     </header>
 
@@ -23,19 +23,24 @@
 
         <h2>Calculadora de Quilovolts (kV)</h2>
 
-        <div> <!--Digite a CA -->
-             Digite CA.<input type="number" id="inputCA" placeholder="Constante do Aparelho">
-        </div> <!--Digite a CA -->
+        <div class="camposDeInput">
+            <div> <!--Digite a CA -->
+                <p>Digite CA:</p>
+                <input type="number" id="inputCA" placeholder="Constante do Aparelho">
+            </div> <!--Digite a CA -->
 
-        <div> <!--Espessura do corpo: -->
-            Espessura do corpo.<input type="number" id="inputNumber" placeholder="Espessura em cm"> 
-        </div> <!--Espessura do corpo: -->
+            <div> <!--Espessura do corpo: -->
+                <p>Espessura do corpo:</p>
+                <input type="number" id="inputNumber" placeholder="Espessura em cm">
+            </div> <!--Espessura do corpo: -->
 
-        <button id="calculateButton">Calcular</button>
+            <div><button id="calculateButton">Calcular</button></div>
 
-        <div> <!--Resultado do Kv:-->
-            Resultado do Kv.<input type="number" id="inputKv" placeholder="Resultado do Kv" readonly> 
-        </div> <!--Resultado do Kv:-->
+            <div> <!--Resultado do Kv:-->
+                <p>Resultado do Kv:</p>
+                <input type="number" id="inputKv" placeholder="Resultado do Kv" readonly>
+            </div> <!--Resultado do Kv:-->
+        </div>
 
         <div class="informacao"> <!-- Divisão de Informações -->
 
@@ -47,7 +52,7 @@
             </p>
 
             <p>
-                A fórmula do kv é: <strong> Kv = 2e + CA </strong>
+                A fórmula do kv é: <strong> Kv = 2 x e + CA </strong>
             </p>
 
             <p>

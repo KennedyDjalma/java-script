@@ -23,22 +23,31 @@
 
         <h2>Calculadora de Miliampère-segundo (mAs)</h2>
 
-        <div><!--CAMPOS DE INPUT-->
-            Digite CA ou CF.
-            <input type="number" id="inputCA" placeholder="Constante Aparelho/filme"> <br>
+        <div class="camposDeInput"><!--CAMPOS DE INPUT-->
+            <div>
+                <p>Digite CA ou CF.</p>
+                <input type="number" id="inputCA" placeholder="Constante Aparelho/filme"> <br>
+            </div>
 
-            Espessura do corpo.
-            <input type="number" id="inputCm" placeholder="Espessura em cm"> <br>
+            <div>
+                <p>Espessura do corpo.</p>
+                <input type="number" id="inputCm" placeholder="Espessura em cm"> <br>
+            </div>
 
-            C.M.M.
-            <input type="number" id="inputCMM" placeholder="C.M.M."> <br>
+            <div>
+                <p>C.M.M.</p>
+                <input type="number" id="inputCMM" placeholder="C.M.M."> <br>
+            </div>
 
+            <div>
+                <button id="calculateButton" onclick="calcularmAs()">Calcular</button>
+                <br>
+            </div>
 
-            <button id="calculateButton" onclick="calcularmAs()">Calcular</button>
-            <br>
-
-            Resultado do mAs.
-            <input type="number" id="inputmAs" placeholder="Resultado do mAs" readonly>
+            <div>
+                <p>Resultado do mAs.</p>
+                <input type="number" id="inputmAs" placeholder="Resultado do mAs" readonly>
+            </div>
         </div><!--CAMPOS DE INPUT-->
 
 
@@ -112,10 +121,10 @@
     </div> <!-- fim da div meioDaPagina -->
 
     <footer>
-            <p>Desenvolvido por: <a href="https://www.linkedin.com/in/kennedy-djalma-492400283/" target="_blank">Kennedy
-                    Djalma.</a></p>
+        <p>Desenvolvido por: <a href="https://www.linkedin.com/in/kennedy-djalma-492400283/" target="_blank">Kennedy
+                Djalma.</a></p>
 
-            <p>Baseado no livro: "Técnicas Básicas de Bolso" de Leal.R | Ramos, E.S. | Chernicharo, J.</p>
+        <p>Baseado no livro: "Técnicas Básicas de Bolso" de Leal.R | Ramos, E.S. | Chernicharo, J.</p>
     </footer>
     <script src="calcMas.js"></script>
 </body>
